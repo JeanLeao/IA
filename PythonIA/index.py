@@ -122,7 +122,7 @@ train_X = scaler.fit_transform(train_X)
 test_X = scaler.transform(test_X)
 
 # Criar a rede neural
-model = MLPClassifier(hidden_layer_sizes=(100, 50), learning_rate_init=0.001, activation='relu')
+model = MLPClassifier(hidden_layer_sizes=(20, 20),  activation='relu')
 
 # Treinar o modelo
 model.fit(train_X, train_y)
